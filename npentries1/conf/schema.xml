@@ -93,9 +93,10 @@
  <copyField source="cd_antigen"               dest="text"/>
  <copyField source="international_name"       dest="text"/>
  <copyField source="region_name"              dest="text"/>
- 
+ <copyField source="cv_acs"                   dest="text"/>
  
 <!-- cv_* fields not copied at the moment because their content is included in annotations or expression field -->
+<!-- Daniel on 4th of July: cv_acs is not copied to text, since it contains additional data related to annotation properties and experimental contexts -->
  
 <types>
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
